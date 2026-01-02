@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyvinx - Gestão Financeira</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Container principal da aplicação -->
+    <div id="app"></div>
+
+    <!-- Loading inicial -->
+    <div id="initial-loading" class="loading-fullscreen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/pages/login.js"></script>
+    <script src="js/pages/register.js"></script>
+    <script src="js/pages/dashboard.js"></script>
+    <script src="js/pages/transactions.js"></script>
+    <script src="js/pages/cards.js"></script>
+    <script src="js/pages/accounts.js"></script>
+    <script src="js/pages/categories.js"></script>
+    <script src="js/pages/goals.js"></script>
+    <script src="js/pages/budgets.js"></script>
+    <script src="js/pages/reports.js"></script>
+    <script src="js/pages/profile.js"></script>
+
+    <!-- Debug: Check if all modules loaded -->
+    <script>
+        console.log('=== Module Check ===');
+        console.log('Utils:', typeof Utils);
+        console.log('API:', typeof API);
+        console.log('Auth:', typeof Auth);
+        console.log('UI:', typeof UI);
+        console.log('LoginPage:', typeof LoginPage);
+        console.log('RegisterPage:', typeof RegisterPage);
+        console.log('DashboardPage:', typeof DashboardPage);
+        console.log('===================');
+    </script>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
